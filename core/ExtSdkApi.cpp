@@ -9,6 +9,7 @@
 #include "ExtSdkApiJava.h"
 #elif defined(CPP_LANGUAGE)
 #elif defined(OBJC_LANGUAGE)
+#include "ExtSdkApiObjcImpl.h"
 #else
 #error "Please specify the language macro definition."
 #endif
@@ -22,7 +23,8 @@ ExtSdkApi* ExtSdkApi::getInstance() {
 #elif defined(CPP_LANGUAGE)
     // TODO: no implement
 #elif defined(OBJC_LANGUAGE)
-    return NULL;
+    static ExtSdkApiObjcImpl instance;
+    return &instance;
 #else
 #error "Please specify the language macro definition."
 #endif

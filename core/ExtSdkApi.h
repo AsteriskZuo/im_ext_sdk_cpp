@@ -14,6 +14,8 @@ EXT_SDK_NAMESPACE_BEGIN
 /// 分发接口
 class ExtSdkApi {
 public:
+    virtual ~ExtSdkApi() {}
+    
     static ExtSdkApi* getInstance();
 
     virtual void init(const std::shared_ptr<ExtSdkObject> config) = 0;
