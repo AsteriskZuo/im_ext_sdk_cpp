@@ -2,7 +2,7 @@
 
 EXT_SDK_NAMESPACE_BEGIN
 
-ExtSdkObjectObjcImpl::ExtSdkObjectObjcImpl(NSObject* object) : ExtSdkObject(), obj(object) {
+ExtSdkObjectObjcImpl::ExtSdkObjectObjcImpl(id object) : ExtSdkObject(), obj(object) {
     
 }
 

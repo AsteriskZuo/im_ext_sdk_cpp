@@ -9,10 +9,10 @@ EXT_SDK_NAMESPACE_BEGIN
 class ExtSdkObjectObjcImpl : public ExtSdkObject {
 public:
     virtual ~ExtSdkObjectObjcImpl() {}
-    ExtSdkObjectObjcImpl(NSObject* object);
+    ExtSdkObjectObjcImpl(id object);
     
 public:
-    NSObject* obj;
+    id obj;
 };
 
 EXT_SDK_NAMESPACE_END
