@@ -665,3 +665,6 @@ FodyWeavers.xsd
 .ninja_log
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,windows,macos,xcode,visualstudio,androidstudio,visualstudiocode,linux
+
+### zuoyu
+CMakeLists.txt
