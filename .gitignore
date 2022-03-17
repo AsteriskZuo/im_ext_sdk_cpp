@@ -1,6 +1,55 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudio,xcode,androidstudio,macos,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,xcode,androidstudio,macos,windows
+# Created by https://www.toptal.com/developers/gitignore/api/c++,windows,macos,xcode,visualstudio,androidstudio,visualstudiocode,linux
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,windows,macos,xcode,visualstudio,androidstudio,visualstudiocode,linux
+
+### C++ ###
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
 ### macOS ###
 # General
@@ -30,6 +79,27 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# Support for Project snippet scope
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -118,7 +188,6 @@ proguard/
 captures/
 .navigation/
 *.ipr
-*~
 *.swp
 
 # Keystore files
@@ -282,9 +351,7 @@ StyleCopReport.xml
 *_h.h
 *.ilk
 *.meta
-*.obj
 *.iobj
-*.pch
 *.pdb
 *.ipdb
 *.pgc
@@ -581,15 +648,9 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
 # Local History for Visual Studio Code
-.history/
 
 # Windows Installer files from build outputs
 
@@ -599,4 +660,8 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudio,xcode,androidstudio,macos,windows
+### Ninja ###
+.ninja_deps
+.ninja_log
+
+# End of https://www.toptal.com/developers/gitignore/api/c++,windows,macos,xcode,visualstudio,androidstudio,visualstudiocode,linux
