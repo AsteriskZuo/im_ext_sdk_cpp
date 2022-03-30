@@ -6,6 +6,7 @@
 #include "ExtSdkObjectJava.h"
 #include "ExtSdkApi.h"
 #include "ExtSdkJniHelper.h"
+#include "ExtSdkConfig.h"
 #include <jni.h>
 
 EXT_SDK_NAMESPACE_BEGIN
@@ -126,4 +127,17 @@ JNIEXPORT void JNICALL
 Java_com_easemob_ext_1sdk_jni_ExtSdkApiJni_nativeUnInit(JNIEnv *env, jclass clazz) {
     EXT_SDK_NAMESPACE_USING
     ExtSdkApi::getInstance()->unInit();
+}
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_easemob_ext_1sdk_common_ExtSdkTypeUtil_nativeCurrentPlatform(JNIEnv *env, jclass clazz) {
+    EXT_SDK_NAMESPACE_USING
+    return (jint) ExtSdkConfig::current_platform_type;
+}
+extern "C"
+JNIEXPORT jint JNICALL
+Java_com_easemob_ext_1sdk_common_ExtSdkTypeUtil_nativeCurrentArchitecture(JNIEnv *env,
+                                                                          jclass clazz) {
+    EXT_SDK_NAMESPACE_USING
+    return (jint) ExtSdkConfig::current_architecture_type;
 }

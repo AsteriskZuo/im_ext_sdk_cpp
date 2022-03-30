@@ -6,13 +6,16 @@
 #define ANDROID_EXTSDKCONFIG_H
 
 #include "ExtSdkDefine.h"
-#include "ExtSdkLanguageType.h"
+#include "ExtSdkType.h"
 #include <string>
 
 EXT_SDK_NAMESPACE_BEGIN
 
 class ExtSdkConfig {
+public:
     static const ExtSdkLanguageTypeValue current_language_type;
+    static const ExtSdkPlatformTypeValue current_platform_type;
+    static const ExtSdkArchitectureTypeValue current_architecture_type;
     static const std::string current_ext_sdk_version;
 };
 
