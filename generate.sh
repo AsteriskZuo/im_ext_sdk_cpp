@@ -9,5 +9,5 @@ if [ "$2" == "flutter" ]; then
     elif [ "$2" == "rn" ]; then
     cp CMakeLists.txt.rn CMakeLists.txt
 else
-    echo "help: generate.sh --type <flutter2|rn|unity>"
+    echo "help: generate.sh --type <flutter|rn|unity>"
 fi

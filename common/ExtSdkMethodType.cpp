@@ -139,7 +139,7 @@ const std::string ExtSdkMethodType::fetchChatRoomWhiteListFromServer = "fetchCha
 const std::string ExtSdkMethodType::isMemberInChatRoomWhiteListFromServer = "isMemberInChatRoomWhiteListFromServer";
 
 const std::string ExtSdkMethodType::muteAllChatRoomMembers = "muteAllChatRoomMembers";
-const std::string ExtSdkMethodType::unMuteAllChatRoomMembers = "umMuteAllChatRoomMembers";
+const std::string ExtSdkMethodType::unMuteAllChatRoomMembers = "unMuteAllChatRoomMembers";
 
 
 // EMChatRoomManagerListener
